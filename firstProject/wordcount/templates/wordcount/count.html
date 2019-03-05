@@ -1,0 +1,9 @@
+<p> 입력받은 텍스트: {{fulltext}}</p>
+<p> 단어 카운트: {{total}} </p>
+
+{% for word, count in word_dictionary %}
+  {{word}} - {{count}}
+  <br>
+{% endfor %}
+
+<a href = "{% url 'home' %}"> HOME </a>
